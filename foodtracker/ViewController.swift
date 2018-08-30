@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ViewController: UIViewController, UITextFieldDelegate, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
+class ViewController: UIViewController, UITextFieldDelegate, UIImagePickerControllerDelegate, UINavigationControllerDelegate{
     
     // MARK: Properties
     @IBOutlet weak var nameTextField: UITextField!
@@ -35,6 +35,7 @@ class ViewController: UIViewController, UITextFieldDelegate, UIImagePickerContro
         
         return true
     }
+    
     
     func textFieldDidEndEditing(_ textField: UITextField) {
         mealNameLabel.text = textField.text
